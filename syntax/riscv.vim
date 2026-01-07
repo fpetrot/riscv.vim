@@ -24,7 +24,7 @@ syntax match   riscvLabelColon /:/ contained
 syntax match   riscvLabel      /^\s*\.\?\h\w*:/ contains=riscvLabelColon
 syntax match   riscvLabel      /^\s*\d\+:/ contains=riscvLabelColon
 " A reference to a local label using <num>[BF]
-syntax match   riscvLabelRef   /\d\+[bf]/
+syntax match   riscvLabelRef   /\<\d\+[bf]\>/
 
 " Registers
 " Numbered registers
